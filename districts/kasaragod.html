@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+@import "bootstrap.min.css";
+/* Override UGG site */
+#main {
+  width: 100%;
+  padding: 0;
+}
+.content-asset p {
+  margin: 0 auto;
+}
+.breadcrumb {
+  display: none;
+}
+
+/* Helpers */
+/**************************/
+.margin-top-10 {
+  padding-top: 10px;
+}
+.margin-bot-10 {
+  padding-bottom: 10px;
+}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+#parallax-world-of-ugg h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 70px;
+  letter-spacing: 10px;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: 0.9;
+}
+#parallax-world-of-ugg h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 0;
+  font-weight: 400;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: black;
+}
+#parallax-world-of-ugg p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.first-character {
+  font-weight: 400;
+  float: left;
+  font-size: 84px;
+  line-height: 64px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.sc {
+  color: #943f3f;
+}
+.ny {
+  color: #3d3c3a;
+}
+.atw {
+  color: #c48660;
+}
+
+/* Section - Title */
+/**************************/
+
+#parallax-world-of-ugg .title {
+  background:rgba(63, 65, 63, 0.63);
+  padding: 60px;
+  margin: 0 auto;
+  text-align: center;
+}
+#parallax-world-of-ugg .title h1 {
+  font-size: 35px;
+  letter-spacing: 8px;
+}
+
+/* Section - Block */
+/**************************/
+.hero{
+  background-color: rgba(63, 65, 63, 0.63);
+}
+
+#parallax-world-of-ugg .block {
+  /* background: rgba(63, 65, 63, 0.63); */
+  padding: 60px;
+  width: 820px;
+  margin: 0 auto;
+  text-align: justify;
+}
+#parallax-world-of-ugg .block-gray {
+  background:rgb(255, 255, 255);
+  padding: 60px;
+}
+#parallax-world-of-ugg .section-overlay-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(148, 223, 9);
+  opacity: 0.7;
+}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+#parallax-world-of-ugg .parallax-two {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#parallax-world-of-ugg .parallax-three {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#parallax-world-of-ugg .parallax-four {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+#parallax-world-of-ugg .parallax-five {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#parallax-world-of-ugg .parallax-six {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section > div > h1,h2 {
+  letter-spacing: 25px !important;
+}
+  
+
+/* Footer */
+.footer-copyright{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+.
+/* Extras */
+/**************************/
+/* .box> {
+  border-bottom: 1px solid black;
+  width: 150px;
+  margin: 0 auto;
+} */
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {
+    padding: 40px;
+    width: 620px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {
+    padding: 30px;
+    width: 420px;
+  }
+  #parallax-world-of-ugg h2 {
+    font-size: 30px;
+  }
+  #parallax-world-of-ugg .block {
+    padding: 30px;
+  }
+  #parallax-world-of-ugg .parallax-one,
+  #parallax-world-of-ugg .parallax-two,
+  #parallax-world-of-ugg .parallax-three {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+  }
+
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {
+    padding: 30px 15px;
+    width: 290px;
+  }
+}
+
+
+/* -----------blah-section------------- */
+
+
+
+section.iron-main{
+  background:  grey;
+  /* backdrop-filter: blur(10px); */
+  flex-wrap: wrap;
+
+ }
+ 
+
+ .iron-man{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1570px;
+  padding:20px 20px ;
+  overflow: hidden;
+  /* backdrop-filter: blur(10px); */
+  /* grid-gap: 10px; */
+
+}
+.iron-red{
+  /* border: 1px solid #ddd; */
+  /* background-color: rgba(128, 128, 128, 0.397); */
+  /* backdrop-filter: blur(20px); */
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+.iron-red img {
+  width: 280px;
+  height: auto;
+  margin-bottom: 10px;
+  /* margin-right: 10px; */
+}
+ .iron-red .img-big{
+
+  width: 280px;
+  height: 500px;
+}
+.iron-red .img-small{
+  width: 280px;
+  height: 200px;
+}
+
+
+
+
+
+
+</style>
+<body >
+    
+
+  <div id="parallax-world-of-ugg">
+
+    <!-- <section>
+        <div class="title">
+            <h1>EXPLORE </h1>
+        </div>
+    </section> -->
+
+    <section>
+        <div class="parallax-one" style="background-image: url(/Assets/images/kr-14-pages/kasargod/kasargodebg.jpg);">
+            <h2>KASARGOD</h2>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="block">
+            <p><span class="first-character sc">A</span>ffectionately nicknamed the 'Venice of the East' by
+                travellers from across the world, Alappuzha is
+                a district of immense natural beauty. Embraced by the Arabian Sea in the west and a network of
+                lakes, lagoons and freshwater rivers criss-crossing it, this backwater country is home toa vibrant
+                animal and avian life. By virtue of its proximity to the sea, the town has always carved out an
+                exclusive place for itself in the maritime history of Kerala. </p>
+            <p class="line-break margin-top-10"></p>
+            <p class="margin-top-10">Renowned for its boat races, beaches, marine products and coir industry, the
+                singularity of this land is the region called Kuttanad. A land of lush paddy fields referred to as
+                the 'Rice Bowl of Kerala', it is one of the few places in the world where farming is done below sea
+                level. This once prosperous trading and fishing centre is nowadays a world renowned backwater
+                tourist destination.</p><br>
+            <p class="line-break margin-top-10"></p>
+            <h3 style="text-align: center; font-size: 20px;"><u> Must Visit Places</u> </h3>
+            <p class="line-break margin-top-10"></p>
+        </div>
+    </section>
+
+    <section>
+        <div class="parallax-two" style="background-image: url(/Assets/images/kr-14-pages/kasargod/BEKALFORT.jpg);">
+            <h2> BEKAL FORT</h2>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="block">
+            <p><span class="first-character ny">A</span>lappuzha beach is quite a popular tourist spot in Kerala,
+                known to provide relaxation. The pier, which extends into the sea here, is around 140 years old.
+                Blessed with natures green beauties such as lagoons, vast lakes and numerous fresh water rivers,
+                Alappuzha is a natural wonderland of Kerala state. The Alappuzha (Alleppey) beach is
+                spectacular.Known as the Venice of East, with the Arabian Sea in the West and a large number of
+                lakes and lagoons crisscrossing it, Alappuzha is one of the most beautiful districts in fascinating
+                Kerala. Famous for a horde of things, Alappuzha stands out for its breathtakingly amazing beach.
+                This beach along with its famous backwater houseboats and boat races attracts thousands of tourists
+                every year.The beach is is one of the most popular picnic spots in Alappuzha.
+            </p>
+            <p class="line-break margin-top-10"></p>
+            <p class="margin-top-10">Earlier known an Alleppey, the place is now famous for the Snake Boat Races
+                held here every year around the time of the Onam festival. The giant snake boats called
+                Chundanvalloms, race against each other for the prestigious Nehru Trophy. Crowds gather in huge
+                numbers to witness this race, which is also a famous event amongst the tourist population visiting
+                fascinating Kerala,south India. Today, Alappuzha has grown into an important beach and backwater
+                tourist centre, attracting several thousands of foreign tourists each year. Alappuzha is also famous
+                for its marine products and coir Industry.
+
+                Holidaying on the beaches of Kerala, especially Alappuzha can be great fun.Sumptuous sea food can be
+                savoured at the beach.The Ayurveda, yoga and meditation centres near Alappuzha beach are great
+                tourist attractions.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="parallax-three" style="  background-image: url(/Assets/images/kr-14-pages/kasargod/parappa.jpg); ">
+            <h2>PARAPPA WILDLIFE SANCTUARY</h2>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="block">
+            <p><span class="first-character atw">A</span> ccording to mythology a young Brahmin dived into the
+                Vembanadu lake to perform his evening ablutions and the water made way for land to rise from below,
+                thus creating the enchanting island of (sands of midnight) Pathiramanal . This little island on the
+                backwaters is a favourite haunt of hundred of rare migratory birds from different parts of the
+                world. The island lies between Thaneermukkom and Kumarakom, and is accessable only by boat.</p>
+            <p class="line-break margin-top-10"></p>
+            <p class="margin-top-10">Pathiramanal is a bird watcher’s paradise. It is about 1.5 km from Muhamma Boat
+                Jetty and about 13 km from Alappuzha. This small island on the backwaters is a safe haven for
+                hundreds of rare migrating birds. A 1.5 hour motor boat ride or a 30 minute speedboat trip from
+                Alappuzha gets you here. Surrounded by the Vembanad Lake, stretching from Alappuzha to Kochi and the
+                Kayamkulam Lake, Pathiramanal is accessible only by boat. It is an ideal pit stop in the middle of a
+                houseboat ride.
+
+                The name 'Pathiramanal' means 'Sands of Night'. Estimates say that the area has 91 local species of
+                birds and 50 migratory birds. One can see Pintail Ducks, Common Teal, Night Heron, Cormorant,
+                Darter, Indian Shag, Purple Heron, Cattle Egret, Indian Pond Heron, Little Egret, Bronze-winged
+                Jacanas, Stork-billed Kingfisher, Whistling Duck, Cotton Pygmy-Goose, Little Cormorant and Whiskered
+                Tern. Avid bird watchers will indeed find few other places that rival Pathiramanal.</p>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="parallax-four"
+            style="  background-image: url(/Assets/images/kr-14-pages/kasargod/mallikarjuna.jpg);            ">
+            <h2>MALLIKARJUNA TEMPLE</h2>
+        </div>
+    </section>
+
+    <section class="iron-main">
+
+    
+        <div class="iron-man">
+  
+    
+  
+          <div class="iron-red"> 
+
+          <img class="img-big" src="https://images.unsplash.com/photo-1585595334947-aa2a8dff43d2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+             
+                <img class="img-small" src="https://images.unsplash.com/photo-1634141693341-9d51836aa188?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                
+          <img class="img-big" src="https://images.unsplash.com/photo-1672424831854-3d8303670210?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+
+                <img class="img-small" src="https://images.unsplash.com/photo-1604036880241-affc05dcf1d2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+
+            </div>
+            
+            
+        
+            <div class="iron-red"> 
+
+                <img class="img-small" src="/Assets/images/img-kr-fest/boat-race.jpg">
+                 
+          <img class="img-big" src="https://images.unsplash.com/photo-1652805424854-228ba60dd4eb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+
+                <img class="img-small" src="/Assets/images/img-kr-fest/boat-race.jpg">
+
+          <img class="img-big" src="https://images.unsplash.com/photo-1689705874004-3de05245f191?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">  
+                 
+                </div>
+        
+        
+                <div class="iron-red"> 
+                  
+          <img class="img-big" src="https://images.unsplash.com/photo-1633145284780-c8fda4f11464?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGFsYXBwdXpoYXxlbnwwfHwwfHx8MA%3D%3D">
+                     
+                <img class="img-small" src="https://images.unsplash.com/photo-1592991184031-9b48e13b701f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+          
+                        
+          <img class="img-big" src="https://images.unsplash.com/photo-1606368992176-5c1193684294?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                     
+                <img class="img-small" src="https://images.unsplash.com/photo-1619071491959-023e4b0faded?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+          
+                    </div>
+
+
+        
+                    <div class="iron-red">
+
+                <img class="img-small" src="https://images.unsplash.com/photo-1559820636-054ac3a0bf23?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                      
+          <img class="img-big" src="https://images.unsplash.com/photo-1608697005052-5f0d5192f16b?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                 
+                <img class="img-small" src="https://images.unsplash.com/photo-1565537393232-f7a99113fecd?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">     
+                
+          <img class="img-big" src="https://images.unsplash.com/photo-1615294238970-c406cb03efb6?q=80&w=1227&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                       
+                     </div>
+
+
+                     
+    
+                        <div class="iron-red"> 
+
+          <img class="img-big" src="https://images.unsplash.com/photo-1547707188-cdbffa0bc270?q=80&w=974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                         
+                <img class="img-small" src="https://images.unsplash.com/photo-1604036790074-93b3bab88926?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+
+          <img class="img-big" src="https://images.unsplash.com/photo-1693893850383-2269b46b7bf1?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                         
+                <img class="img-small" src="https://images.unsplash.com/photo-1667413443984-398360029b06?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                              
+                          </div>
+        
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      
+
+
+    </section>
+
+
+    <!-- <section>
+        <div class="parallax-five"
+            style="  background-image: url(../img/karumadi.jpg);            ">
+            <h2>KARUMADI STATUE</h2>
+        </div>
+    </section>
+
+    <section>
+        <div class="block">
+            <p><span class="first-character atw">S</span> mall crowds can be seen making their way throughout the
+                year to a site located about 5 km east of Ambalappuzha in Alappuzha district. The destination is the
+                Karumadi Kuttan, a renowned Buddhist pilgrim centre, wherein lies a special Buddha statue that dates
+                back to the 11th century. Made of solid black granite, the entire site is today under the protection
+                of Kerala Archaeology Department. People from across the nation and abroad come here to pay homage
+                and seek blessings, as stories about its wonderful healing properties have spread far and wide.</p>
+            <p class="line-break margin-top-10"></p>
+        </div>
+    </section> -->
+
+    <!------------------------------------------------------------------ footer ---------------------------------------------------->
+    <!-- <footer class="page-footer font-small blue "> -->
+
+        <!-- Copyright -->
+        <!-- <div class="footer-copyright text-center py-10">© 2021 Copyright:
+            <a href="../index.html"> keralatourism.com</a><br><br>
+        </div> -->
+        <!-- Copyright -->
+
+    <!-- </footer> -->
+    <!------------------------------------ Footer Ends---------------------------------->
+
+<!-- </div> -->
+
+
+
+
+
+
+</body>
+</html>

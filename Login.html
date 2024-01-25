@@ -320,45 +320,37 @@ footer a {
         <div class="form-container sign-up-container">
             <form action="#">
                 <h1>Create Account</h1>
-                <!-- <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                </div> -->
                 <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button>Sign Up</button>
+                <input type="text"   placeholder="Name" />
+                <input type="email" id="signupemail"  placeholder="Email" />
+                <input type="text" id="signuppassword" placeholder="Password" />
+                <button id="signUp">Sign Up</button>
             </form>
         </div>
-        <div class="form-container sign-in-container">
-            <form action="#">
-                <h1>Sign in</h1>
-                <!-- <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                </div> -->
-                <span>or use your account</span>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <a href="#">Forgot your password?</a>
-                <button>Sign In</button>
-            </form>
-        </div>
+
+		<div class="form-container sign-in-container">
+			<form id="signInForm" action="#">
+				<h1>Sign in</h1>
+				<span>or use your account</span>
+				<input type="text" id="exampleInputEmail1" placeholder="Email" />
+				<input type="text" id="examplepassword" placeholder="Password" />
+				<a href="#">Forgot your password?</a>
+				<button type="button" id="signIn">Sign In</button>
+			</form>
+		</div>
+
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
 					<!-- <img src="/Assets/images/logo.png" class="overlay-img"> -->
                     <h1>Welcome Back!</h1>
                     <p>To keep connected with us please login with your personal info</p>
-                    <button class="ghost" id="signIn">Sign In</button>
+                    <button class="ghost" id="signIn1">Sign In</button>
                 </div>
                 <div class="overlay-panel overlay-right">
                     <h1>Hello, Friend!</h1>
                     <p>Enter your personal details and start journey with us</p>
-                    <button class="ghost" id="signUp">Sign Up</button>
+                    <button class="ghost" id="signUp1">Sign Up</button>
                 </div>
             </div>
         </div>
@@ -368,14 +360,11 @@ footer a {
 
 
     
-    <!-- <footer>
+    <footer>
         <p>
-            Created with <i class="fa fa-heart"></i> by
-            <a target="_blank" href="https://florin-pop.com">Florin Pop</a>
-            - Read how I created this and how you can join the challenge
-            <a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
+
         </p>
-    </footer> -->
+    </footer>
 
 
 
@@ -384,8 +373,8 @@ footer a {
 
 
 
-const signUpButton = document.getElementById('signUp');
-const signInButton = document.getElementById('signIn');
+const signUpButton = document.getElementById('signUp1');
+const signInButton = document.getElementById('signIn1');
 const container = document.getElementById('container');
 
 signUpButton.addEventListener('click', () => {
@@ -397,8 +386,77 @@ signInButton.addEventListener('click', () => {
 });
 
 
-</script>
+//sign in validation 
 
+
+function validateForm() {
+  // Check the format of the email and password
+  const email = document.getElementById('exampleInputEmail1').value;
+  const password = document.getElementById('examplepassword').value;
+
+  function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+  
+  function isValidPassword(password) {
+
+	 const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+     return passwordRegex.test(password);
+  }
+
+  if (!isValidEmail(email)) {
+    alert('Invalid email format');
+    return;
+  }
+
+  if (!isValidPassword(password)) {
+    alert('Invalid password format or length');
+    return;
+  }
+
+}
+
+const signInButton1 = document.getElementById('signIn');
+
+signInButton1.addEventListener('click', validateForm);
+
+
+
+
+//SigUp validation
+
+function validateForm() {
+  // Check the format of the email and password
+  const email2 = document.getElementById('signupemail').value;
+  const password2 = document.getElementById('signuppassword').value;
+
+  function isValidEmail(email2) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email2);
+  }
+  function isValidPassword(password2) {
+
+    const passwordRegex = /^(?=.*[a-z]*[A-Z]*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    return passwordRegex.test(password2);
+  }
+
+  if (!isValidEmail(email2)) {
+    alert('Invalid email format');
+    return;
+  }
+  if (!isValidPassword(password2)) {
+    alert('Invalid password format or length');
+    return;
+  }
+  
+}
+const signUpButton1 = document.getElementById('signUp');
+
+signUpButton1.addEventListener('click', validateForm);
+
+
+</script>
 
 
 </body>
